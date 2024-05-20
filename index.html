@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Population Growth Visualizer</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Logistic Growth Model</h1>
+    <canvas id="populationChart" width="800" height="400"></canvas>
+    <div>
+        <label for="initialPopulation">Initial Population Size:</label>
+        <input type="number" id="initialPopulation" value="10">
+    </div>
+    <div>
+        <label for="carryingCapacity">Carrying Capacity (K):</label>
+        <input type="number" id="carryingCapacity" value="100">
+    </div>
+    <div>
+        <label for="growthRate">Growth Rate (r):</label>
+        <input type="range" id="growthRate" min="0.01" max="1" step="0.01" value="0.1">
+        <span id="growthRateValue">0.1</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</head>
